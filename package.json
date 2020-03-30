@@ -1,0 +1,25 @@
+{
+  "name": "online-compile-python",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masayasviel/online-compile-python.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masayasviel/online-compile-python/issues"
+  },
+  "homepage": "https://github.com/masayasviel/online-compile-python#readme",
+  "dependencies": {
+    "compile-run": "^2.3.2",
+    "expless": "^0.1.91",
+    "express": "^4.17.1"
+  }
+}
