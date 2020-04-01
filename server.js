@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const {c, cpp, node, python, java} = require('compile-run');
 
-const sourcecode = "hoge = 1\nif hoge>= 1 :\n  print(hoge+1)\nelse:\n  print(hoge)\nprint(\"hoge\")";
+const sourcecode = "print(4%3)";
 let resultPromise = python.runSource(sourcecode);
 resultPromise
     .then(result => {

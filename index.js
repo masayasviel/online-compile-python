@@ -1,4 +1,10 @@
 const result = document.getElementById("resultBox");
+const output = new Vue({
+  el: '#resultBox',
+  data: {
+      outputs: null,
+  }
+})
 function compile() {
     let sourcecode = document.getElementById("sourcecode");
     let code = encodeURIComponent(sourcecode.value);
@@ -7,5 +13,5 @@ function compile() {
         mode: "cors",
       })
         .then(res=>res.json())
-        .then(res=>result.textContent = res.output.replace(/\\n/, "<br>"), err=>console.error('Error:', err));
+        .then(res=>output.outputs = res.output.split("\n"), err=>console.error('Error:', err));
 }

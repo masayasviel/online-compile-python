@@ -4,13 +4,18 @@
         <meta charset="utf-8">
         <title>python実行</title>
         <link rel="stylesheet" href="./style.css">
+        <script src="https://unpkg.com/vue"></script>
     </head>
     <body>
         <h1>コードを書いて実行しよう</h1>
         <input type="button" value="実行" onclick="compile()">
         <textarea id="sourcecode" row="10" cols="30"></textarea>
         <h1>実行結果</h1>
-        <div id="resultBox"></div>
+        <div id="resultBox">
+            <div v-for="item in outputs">
+                <div>{{ item }}</div>
+            </div>
+        </div>
     </body>
     <script type="text/javascript" src="index.js"></script>
 </html>
