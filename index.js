@@ -1,9 +1,9 @@
 const result = document.getElementById("resultBox");
 function compile() {
     let sourcecode = document.getElementById("sourcecode");
-    let code = sourcecode.value;
+    let code = encodeURIComponent(sourcecode.value);
     let query = "https://smart-delicious-sternum.glitch.me/?code=" + code;
-    fetch(encodeURI(query), {
+    fetch(query, {
         mode: "cors",
       })
         .then(res=>res.json())
