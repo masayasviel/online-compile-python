@@ -1,0 +1,15 @@
+#sourcecode {
+    margin: 5%;
+    width: 90%;
+    height: 300px;
+    border: solid;
+}
+
+#resultBox {
+    width: 50%;
+    height: 200px;
+    margin-left: 10%;
+    font-size: 24px;
+    border: solid;
+    word-break : break-all;
+  }
