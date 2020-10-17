@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>python実行</title>
-        <link rel="stylesheet" href="./style.css">
-        <script src="https://unpkg.com/vue"></script>
-    </head>
-    <body>
-        <h1>コードを書いて実行しよう</h1>
-        <input type="button" value="実行" onclick="compile()">
-        <textarea id="sourcecode" row="10" cols="30"></textarea>
-        <h1>実行結果</h1>
-        <div id="resultBox">
-            <div v-for="item in outputs">
-                <div>{{ item }}</div>
-            </div>
-        </div>
-    </body>
-    <script type="text/javascript" src="index.js"></script>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>python実行</title>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+    <h1>コードを書いて実行しよう</h1>
+    <div id="editor"></div>
+    <input type="button" value="run" id="submit-button">
+    <h1>実行結果</h1>
+    <div id="resultBox"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ext-language_tools.js"></script>
+    <script type="text/javascript" src="./public/js/editor.js"></script>
+    <script type="text/javascript" src="./public/js/main.js"></script>
+</body>
 </html>

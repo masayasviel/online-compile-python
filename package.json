@@ -1,7 +1,7 @@
 {
   "name": "online-compile-python",
   "version": "1.0.0",
-  "description": "",
+  "description": "- 入力未対応\r - `# coding: utf-8`で日本語対応\r - 1行30文字で10行まで入力可能",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/masayasviel/online-compile-python#readme",
   "dependencies": {
-    "compile-run": "^2.3.2",
-    "expless": "^0.1.91",
+    "body-parser": "^1.19.0",
+    "compile-run": "^2.3.4",
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   }
 }
